@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import CustomNavbar from "./components/CustomNavbar";
+import { customNavbarProps } from "./constants";
+import Logo from "./components/CustomNavbar/Logo";
+import { navLinks, CardProps, buttonProps } from "./constants";
+import CustomCard from "./components/CustomCard";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CustomNavbar
+        background={customNavbarProps.light.background}
+        variant={customNavbarProps.light.variant}
+        logo={<Logo />}
+        navLinks={navLinks}
+      />
+       
+      <CustomCard 
+        width={CardProps.poiSenteur.width}
+        place={CardProps.poiSenteur.place}
+        url={CardProps.poiSenteur.urlImage}
+        titre={CardProps.poiSenteur.titre}
+        text={CardProps.poiSenteur.text}
+        boutonprop={buttonProps}
+      /> 
     </div>
   );
 }
