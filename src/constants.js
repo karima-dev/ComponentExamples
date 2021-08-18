@@ -81,7 +81,7 @@ export const buttonProps={
   secondary: "secondary",
   },
   text:{
-    submit:"Submit",
+    submit:"Se connecter",
   },
   type:{
     submit:"submit",
@@ -138,8 +138,8 @@ labelDefault:{
   defaultInput2:"text",
 },
 label:{
-  labelEmail:"Enter Email",
-  labelPassword:"Enter Password",
+  labelEmail:" Email",
+  labelPassword:" Password",
 },
 typeDefault:{
   defaultInput1:"text",
@@ -154,9 +154,15 @@ placeholderDefault:{
   defaultInput2:"text",
 },
 placeholder:{
-  placeholderEmail:"Enter your Email",
-  placeholderPassword:"Enter your Password",
+  placeholderEmail:"Saisir Email",
+  placeholderPassword:"Saisir Password",
 },
    textErreurEmail:' ',
    textErreurPassword:' ',
 };
+export const listeEmailPassword=[
+
+  { email: "a@a.com", password: "p1"},
+  { email: "b@b.com", password: "p2"},
+  { email: "c@c.com", password: "p3"},
+];
