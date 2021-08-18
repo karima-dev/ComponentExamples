@@ -10,7 +10,7 @@ const index = ({
   boutonprop=buttonProps,
 }) => {
   return (
-    <div style={{marginLeft:'350px'}}>
+    <div style={{marginLeft:'10px'}}>
     <Card style={{ width: width}}>
       <Card.Img variant={place} src={url} />
       <Card.Body>
@@ -18,6 +18,7 @@ const index = ({
         <Card.Text>
           {text}
         </Card.Text>
+         
         <bouton color={boutonprop.color} text={boutonprop.text}/>
       </Card.Body>
     </Card>

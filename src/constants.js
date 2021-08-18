@@ -5,7 +5,7 @@ export const customNavbarProps = {
     navHome: "#home",
     className: "me-auto",
     logo: "My web site",
-    navLink: [{ link: "#home", text: "Homed" }],
+    navLink: [{ keyLink:"key5", link: "#home", text: "Homed" }],
   },
   dark: {
     background: "dark",
@@ -37,9 +37,9 @@ export const logoProps = {
   },
 };
 export const navLinks = [
-  { link: "#home", text: "Home" },
-  { link: "#about", text: "About" },
-  { link: "#hfeatures", text: "Features" },
+  { keyLink: "key1", link: "#home", text: "Home" },
+  { keyLink: "key2", link: "#about", text: "About" },
+  { keyLink: "key3", link: "#hfeatures", text: "Features" },
 ];
 
 export const CardProps = {
@@ -52,15 +52,110 @@ export const CardProps = {
     text: "Pas d'image",
   },
   poiSenteur: {
-    width: "38em",
+    width: "8em",
     place: "top",
     urlImage:
       "https://www.flower.fr/ddoc-316-46d494e60e2c202c41d2e328a2010fb4-abc-pois-senteur-jpg",
     titre: "Pois de Senteur",
     text: "Le Pois de senteur (Lathyrus odoratus) est une espèce de plante herbacée annuelle de la famille des Fabaceae originaire du sud-est de l'Italie et de la Sicile.",
   },
+  agerate: {
+    width: "8em",
+    place: "top",
+    urlImage:
+      "https://static.aujardin.info/cache/th/img10/ageratum-houstonianum-150x112.jpg",
+    titre: "Agérate",
+    text: "L'agérate est une plante herbacée originaire d'une région qui s'étend de l'est de Belize, sur la mer des Caraïbes, au sud du Mexique, sur la côte Pacifique, en passant par le Guatemala.",
+  },
 };
 export const buttonProps={
-color:"primary",
-text:"bien"
+  default:{
+    color:"primary",
+    text:"bien",
+    type:""
+  },
+  color:{
+    primary: "primary",
+  success: "success",
+  info: "info",
+  secondary: "secondary",
+  },
+  text:{
+    submit:"Submit",
+  },
+  type:{
+    submit:"submit",
+  },
+};
+export const slidesProps={
+  default:{
+    className:"d-block w-100",
+     
+    url: "https://st3.depositphotos.com/23594922/31822/v/600/depositphotos_318221368-stock-illustration-missing-picture-page-for-website.jpg",
+    
+    alt:"No-image",
+    
+    titre:"No-image",
+    text:"No-image",
+    slides: [{ className:"d-block w-90", url:"https://images8.alphacoders.com/594/thumb-1920-594870.jpg",  alt:"Fleur",titre:"Fleur 2",text:"Fleur 2" }],
+  },
+  
+  firstSlide:{
+     
+    url:"https://images8.alphacoders.com/594/thumb-1920-594870.jpg",
+    alt:"Fleur",
+    
+    titre:"Fleur rose",
+    text:"Fleur rose",
+  },
+  secondSlide:{
+    
+    url:"https://images3.alphacoders.com/162/thumbbig-162205.webp",
+    alt:"Fleur",
+    
+    titre:"Fleur 2",
+    text:"Fleur 2",
+  },
+  thirdSlide:{
+    
+    url:"https://images5.alphacoders.com/373/thumbbig-373630.webp",
+    alt:"Coquelicot",
+    
+    titre:"Fleur 3",
+    text:"Fleur 3",
+  },
+  
+};
+export const lesSlides=[
+  { className:"d-block w-100", url:"https://images8.alphacoders.com/594/thumb-1920-594870.jpg",  alt:"Fleur",titre:"Fleur 2",text:"Fleur 2" },
+  { className:"d-block w-100", url:"https://images8.alphacoders.com/594/thumb-1920-594870.jpg",  alt:"Fleur",titre:"Fleur 3",text:"Fleur 2"  },
+   
+];
+
+export const inputProps={
+labelDefault:{
+  defaultInput1:"text",
+  defaultInput2:"text",
+},
+label:{
+  labelEmail:"Enter Email",
+  labelPassword:"Enter Password",
+},
+typeDefault:{
+  defaultInput1:"text",
+  defaultInput2:"text",
+},
+type:{
+  typeEmail:"email",
+  typePassword:"password",
+},
+placeholderDefault:{
+  defaultInput1:"text",
+  defaultInput2:"text",
+},
+placeholder:{
+  placeholderEmail:"Enter your Email",
+  placeholderPassword:"Enter your Password",
+},
+   
 };

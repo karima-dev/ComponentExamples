@@ -18,7 +18,7 @@ const index = ({
         <Navbar.Brand href={navHome}>{logo}</Navbar.Brand>
         <Nav className={className}>
         {navLinks.map((i)=>(
-            <CustomNavLinks href={i.link} text={i.text}></CustomNavLinks>
+            <CustomNavLinks key={i.keyLink} href={i.link} text={i.text}></CustomNavLinks>
         ))}
         </Nav>
       </Container>
