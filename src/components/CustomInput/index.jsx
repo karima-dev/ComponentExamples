@@ -1,6 +1,7 @@
 import Form from "react-bootstrap/Form";
 import { inputProps, buttonProps } from "../../constants";
 import Button from "../CustomButton";
+import "./index.css";
 const index = ({
   labelEmail = inputProps.labelDefault.defaultInput1,
   labelPassword = inputProps.labelDefault.defaultInput2,
@@ -9,7 +10,9 @@ const index = ({
   placeholderEmail=inputProps.placeholderDefault.defaultInput1,
   placeholderPassword=inputProps.placeholderDefault.defaultInput2,
   onChangeEmail,onChangePassword,
-  onSubmit}
+  onSubmit,
+  textErreurEmail=inputProps.textErreur,
+textErreurPassword=inputProps.textErreur}
 ) => {
   return (
     <Form onSubmit={onSubmit}>
@@ -19,12 +22,14 @@ const index = ({
         placeholder={placeholderEmail}
         onChange={onChangeEmail}
       />
+      <Form.Text className="styleerreur">{textErreurEmail}</Form.Text><br></br>
       <Form.Label>{labelPassword}</Form.Label>
       <Form.Control
         type={typePassword}
         placeholder={placeholderPassword}
         onChange={onChangePassword}
       />
+      <Form.Text className="styleerreur">{textErreurPassword}</Form.Text><br></br>
       <Button
         color={buttonProps.color.primary}
         text={buttonProps.text.submit}

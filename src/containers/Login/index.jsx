@@ -36,10 +36,11 @@ const Login = () => {
         onChangeEmail={handleChangeEmail}
         onChangePassword={handleChangePassword}
         onSubmit={handleSubmit}
+        textErreurEmail={emailErreur}
+        textErreurPassword={passwordErreur}
       ></CustomInput>
-      <br></br>
-      <h6 id='styleerreur'>{emailErreur}</h6>
-      <h6 id='styleerreur'>{passwordErreur}</h6>
+      
+       
     </div>
   );
 };

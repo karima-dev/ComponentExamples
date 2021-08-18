@@ -157,5 +157,6 @@ placeholder:{
   placeholderEmail:"Enter your Email",
   placeholderPassword:"Enter your Password",
 },
-   
+   textErreurEmail:' ',
+   textErreurPassword:' ',
 };
