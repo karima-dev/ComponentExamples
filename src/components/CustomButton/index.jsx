@@ -1,8 +1,9 @@
 import { Button } from "react-bootstrap";
+import { buttonProps } from "../../constants";
 
-const index = ({ color, text, type }) => {
+const index = ({ color=buttonProps.default.color, text=buttonProps.default.text, onClick, className,name,style }) => {
   return (
-    <Button variant={color} type={type}>
+    <Button variant={color} onClick={onClick} className={className} name={name} style={style}>
       {text}
     </Button>
   );

@@ -1,12 +1,12 @@
 import { Card } from "react-bootstrap";
-import { CardProps,buttonProps } from "../../constants";
+import { cardProps,buttonProps } from "../../constants";
 import bouton from '../CustomButton';
 const index = ({
-  width = CardProps.default.width,
-  place = CardProps.default.place,
-  url = CardProps.default.urlImage,
-  titre=CardProps.default.titre,
-  text=CardProps.default.text,
+  width = cardProps.default.width,
+  place = cardProps.default.place,
+  url = cardProps.default.urlImage,
+  titre=cardProps.default.titre,
+  text=cardProps.default.text,
   boutonprop=buttonProps,
 }) => {
   return (

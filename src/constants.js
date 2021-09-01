@@ -42,7 +42,7 @@ export const navLinks = [
   { keyLink: "key3", link: "#hfeatures", text: "Features" },
 ];
 
-export const CardProps = {
+export const cardProps = {
   default: {
     width: "18em",
     place: "top",
@@ -50,6 +50,14 @@ export const CardProps = {
       "https://st3.depositphotos.com/23594922/31822/v/600/depositphotos_318221368-stock-illustration-missing-picture-page-for-website.jpg",
     titre: "Pas d'image",
     text: "Pas d'image",
+  },
+  cardtodo: {
+    width: "",
+    place: "top",
+    urlImage:
+      "",
+    titre: "",
+    text: "",
   },
   poiSenteur: {
     width: "8em",
@@ -70,21 +78,31 @@ export const CardProps = {
 };
 export const buttonProps={
   default:{
-    color:"primary",
+    color:"secondary",
     text:"bien",
-    type:""
+    type:"text"
   },
   color:{
-    primary: "primary",
+  primary: "primary",
   success: "success",
   info: "info",
   secondary: "secondary",
+  outlineSuccess:"outline-success",
+  outlineDanger:"outline-danger",
+  warning:"warning",
   },
   text:{
     submit:"Se connecter",
+    ajouter:"Add",
+    todoDone:"✔",
+    todosupp:"X",
   },
   type:{
     submit:"submit",
+    
+  },
+  className:{
+    classpad:"pad",
   },
 };
 export const slidesProps={
@@ -132,33 +150,39 @@ export const lesSlides=[
    
 ];
 
-export const inputProps={
-labelDefault:{
-  defaultInput1:"text",
-  defaultInput2:"text",
+export const textInputProps={
+default:{
+  label:"text",
+  placeholder:"Enter text",
+  type:"text",
 },
-label:{
-  labelEmail:" Email",
-  labelPassword:" Password",
+email:{
+  label:"Saisir Email",
+  placeholder:"Saisir Email",
+  type:"email",
+  name:"email",
 },
-typeDefault:{
-  defaultInput1:"text",
-  defaultInput2:"text",
+password:{
+  label:"Saisir Password",
+  placeholder:"Saisir Password",
+  type:"password",
+  name:"password",
 },
-type:{
-  typeEmail:"email",
-  typePassword:"password",
+texttodo:{
+  label:"Plan your day",
+  placeholder:"Add a task",
+  type:"text",
+  name:"texttodo",
+  className:"classtext",
 },
-placeholderDefault:{
-  defaultInput1:"text",
-  defaultInput2:"text",
+timeTodo:{
+  label:"Time task",
+  placeholder:"",
+  type:"time",
+  name:"timetodo",
+  className:"classtime",
 },
-placeholder:{
-  placeholderEmail:"Saisir Email",
-  placeholderPassword:"Saisir Password",
-},
-   textErreurEmail:' ',
-   textErreurPassword:' ',
+
 };
 export const listeEmailPassword=[
 

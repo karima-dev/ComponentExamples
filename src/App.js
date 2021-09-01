@@ -6,19 +6,29 @@ import { navLinks, CardProps, buttonProps,slidesProps,lesSlides } from "./consta
 import CustomCard from "./components/CustomCard";
 import CustomCarosel from "./components/CustomCarosel";
 import Login from "./containers/Login";
+import Inscription from "./containers/Inscription";
+import React from "react"; 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import TodoApp from "./containers/TodoApp";
 function App() {
   return (
-    <div>
-      <CustomNavbar
-        background={customNavbarProps.light.background}
-        variant={customNavbarProps.light.variant}
-        logo={<Logo />}
-        navLinks={navLinks}
-      />
-      {/*  <CustomCarosel nosSlides={lesSlides}/> */}
-       <Login/>
+  
       
-    </div>
+       <Router>
+      <Switch>
+         
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/inscription">
+          <Inscription />
+        </Route>
+        <Route path="/todo">
+          <TodoApp />
+        </Route>
+      </Switch>
+    </Router>
+   
   );
 }
 

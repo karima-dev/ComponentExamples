@@ -1,40 +1,27 @@
 import Form from "react-bootstrap/Form";
-import { inputProps, buttonProps } from "../../constants";
+import { inputProps, buttonProps, textInputProps } from "../../constants";
 import Button from "../CustomButton";
 import "./index.css";
 const index = ({
-  labelEmail = inputProps.labelDefault.defaultInput1,
-  labelPassword = inputProps.labelDefault.defaultInput2,
-  typeEmail = inputProps.typeDefault.defaultInput1,
-  typePassword=inputProps.typeDefault.defaultInput2,
-  placeholderEmail=inputProps.placeholderDefault.defaultInput1,
-  placeholderPassword=inputProps.placeholderDefault.defaultInput2,
-  onChangeEmail,onChangePassword,
-  onSubmit,
-  textErreurEmail=inputProps.textErreur,
-textErreurPassword=inputProps.textErreur}
+  label = textInputProps.default.label,
+  type = textInputProps.default.type,
+  placeholder=textInputProps.default.placeholder,
+  onChange,
+  name,
+  className
+ }
 ) => {
   return (
-    <Form onSubmit={onSubmit}>
-      <Form.Label>{labelEmail}</Form.Label>
+    <Form>
+      <Form.Label>{label}</Form.Label>
       <Form.Control
-        type={typeEmail}
-        placeholder={placeholderEmail}
-        onChange={onChangeEmail}
+        type={type}
+        name={name}
+        placeholder={placeholder}
+        onChange={onChange}
+        name={name}
+        className={className}
       />
-      <Form.Text className="styleerreur">{textErreurEmail}</Form.Text><br></br>
-      <Form.Label>{labelPassword}</Form.Label>
-      <Form.Control
-        type={typePassword}
-        placeholder={placeholderPassword}
-        onChange={onChangePassword}
-      />
-      <Form.Text className="styleerreur">{textErreurPassword}</Form.Text><br></br>
-      <Button
-        color={buttonProps.color.primary}
-        text={buttonProps.text.submit}
-        type={buttonProps.type.submit}
-      ></Button>
     </Form>
   );
 };
